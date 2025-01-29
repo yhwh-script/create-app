@@ -3,7 +3,7 @@ import { argv, chdir, cwd } from "node:process";
 import { join } from "node:path";
 import { existsSync, mkdirSync, opendir, cpSync } from "node:fs";
 import { execSync } from "node:child_process";
-import { checkbox, Seperator } from "@inquirer/prompts"
+import { checkbox } from "@inquirer/prompts"
 
 const projectname = argv[2];
 
@@ -15,7 +15,6 @@ const answers = await checkbox({
   message: 'Select your packages',
   choices: [
     { name: 'elements', value: 'elements', disabled: '(will be installed)' },
-    new Seperator(),
     { name: 'examples', value: 'examples' },
     { name: 'sqlite', value: 'sqlite' },
   ],
