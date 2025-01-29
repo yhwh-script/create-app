@@ -1,7 +1,7 @@
 {
   "author": "Jahrome <yhwhscript@gmail.com>",
   "name": "@yhwh-script/create-app",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "Set up a yhwh-script web app for HTML Single File Components with one command.",
   "bin": {
     "create-app": "./bin/create-app.mjs"
