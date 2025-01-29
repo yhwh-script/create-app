@@ -40,6 +40,7 @@ opendir(directory, (err, dir) => {
     execSync(`npm pkg set type=module`);
 
     let path = '../default';
+    console.log("answers", answers);
     if (answers.includes['sqlite']) {
       console.log("Installing SQLite...");
       execSync("npm install @sqlite.org/sqlite-wasm --save");
