@@ -11,7 +11,7 @@ Easiest way is to simply call the following command:
 
 ```
 Need to install the following packages:
-@yhwh-script/create-app@0.4.4
+@yhwh-script/create-app@0.4.5
 Ok to proceed? (y) y
 ```
 

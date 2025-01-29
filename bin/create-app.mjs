@@ -39,22 +39,23 @@ opendir(directory, (err, dir) => {
     execSync(`npm pkg delete scripts.test`);
     execSync(`npm pkg set type=module`);
 
-    let files = 'files';
+    let path = '../default';
     if (answers.includes['sqlite']) {
       console.log("Installing SQLite...");
       execSync("npm install @sqlite.org/sqlite-wasm --save");
       if (answers.includes['examples']) {
-        files = 'sqlite-examples';
+        path = '../sqlite-examples';
       } else {
-        files = 'sqlite';
+        path = '../sqlite';
       }
     } else if (answers.includes['examples']) {
-        files = 'examples';
-      }
+      path = '../examples';
+      console.log("examples cloning");
+    }
     // kein sqlite, keine examples
 
-    console.log("Copying files...");
-    const defaultPath = join(import.meta.dirname, `../${files}`);
+    console.log(`Copying files... from ${path}`);
+    const defaultPath = join(import.meta.dirname, path);
     const targetPath = join(dir.path);
     cpSync(defaultPath, targetPath, { recursive: true });
 
