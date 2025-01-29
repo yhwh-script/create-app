@@ -1,8 +1,8 @@
 {
   "author": "Jahrome <yhwhscript@gmail.com>",
   "name": "@yhwh-script/create-app",
-  "version": "0.4.1",
-  "description": "Set up a YHWH-script web app for HTML Single File Components with one command.",
+  "version": "0.4.3",
+  "description": "Set up a yhwh-script web app for HTML Single File Components with one command.",
   "bin": {
     "create-app": "./bin/create-app.mjs"
   },
@@ -22,7 +22,10 @@
     "url": "https://github.com/yhwh-script/create-app/issues"
   },
   "homepage": "https://github.com/yhwh-script/create-app#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
-    "@inquirer/checkbox": "^4.0.7"
+    "@inquirer/prompts": "^7.2.4"
   }
 }
