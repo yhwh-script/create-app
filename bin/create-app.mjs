@@ -3,12 +3,25 @@ import { argv, chdir, cwd } from "node:process";
 import { join } from "node:path";
 import { existsSync, mkdirSync, opendir, cpSync } from "node:fs";
 import { execSync } from "node:child_process";
+import { checkbox, Separator } from '@inquirer/prompts';
 
 const projectname = argv[2];
 
 if (!projectname) {
-  throw new Error("Please specify a project name. Syntax: npx create-yhwhscript-app {your_project_name}");
+  throw new Error("Please specify a project name. Syntax: npx @yhwh-script/create-app {your_project_name}");
 }
+
+const answer = await checkbox({
+  message: 'Select your packages',
+  choices: [
+    { name: 'elements', value: 'elements', disabled: '(will be installed)' },
+    new Separator(),
+    { name: 'examples', value: 'examples' },
+    { name: 'sqlite', value: 'sqlite' },
+  ],
+});
+
+console.log("answer", answer);
 
 const directory = join(cwd(), projectname);
 

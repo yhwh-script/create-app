@@ -2,7 +2,7 @@
 Create a WebComponents app with one command.
 
 ## YHWH-Script
-YHWH-script is a JavaScript framework using CustomElements.
+yhwh-script is a JavaScript framework using CustomElements.
 
 ### Installation
 Easiest way is to simply call the following command:
@@ -11,7 +11,7 @@ Easiest way is to simply call the following command:
 
 ```
 Need to install the following packages:
-@yhwh-script/create-app@0.3.0
+@yhwh-script/create-app@0.3.1
 Ok to proceed? (y) y
 ```
 
