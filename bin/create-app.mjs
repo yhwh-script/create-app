@@ -53,7 +53,7 @@ opendir(directory, (err, dir) => {
       console.log("examples cloning");
     }
 
-    console.log(`Copying files... from ${path}`);
+    console.log('Copying files..');
     const defaultPath = join(import.meta.dirname, path);
     const targetPath = join(dir.path);
     cpSync(defaultPath, targetPath, { recursive: true });
