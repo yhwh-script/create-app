@@ -1,0 +1,25 @@
+{
+  "author": "Jahrome <yhwhscript@gmail.com>",
+  "name": "@yhwh-script/create-app",
+  "version": "0.3.0",
+  "description": "Set up a YHWH-script web app for HTML Single File Components with one command.",
+  "bin": {
+    "create-yhwh-project": "./bin/create-yhwhscript-app.mjs"
+  },
+  "keywords": [
+    "JavaScript",
+    "WebComponents",
+    "CustomElements",
+    "Single File Components",
+    "SFC"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yhwh-script/create-app.git"
+  },
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/yhwh-script/create-app/issues"
+  },
+  "homepage": "https://github.com/yhwh-script/create-app#readme"
+}
