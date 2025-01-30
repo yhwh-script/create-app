@@ -1,0 +1,17 @@
+<template>
+    <home-header></home-header>
+    <home-navigation></home-navigation>
+    <main>
+        <slot></slot>
+    </main>
+</template>
+
+<script prefer>
+    const slot = shadowDocument.querySelector("slot");
+    shadowDocument.host.addEventListener('navigate', (e) => {
+        console.log("repl", e.detail)
+        slot.replaceChildren(e.detail);
+        window.scrollX = 0; // move to top
+        window.scrollY = 0;
+    })
+</script>
