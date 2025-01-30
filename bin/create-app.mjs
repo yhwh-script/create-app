@@ -41,7 +41,7 @@ opendir(directory, (err, dir) => {
 
         let path = '../default'
         if (answers.includes('sqlite')) {
-            console.log("SQLite");
+            console.log("Installing SQLite...");
             execSync("npm install @sqlite.org/sqlite-wasm --save");
             if (answers.includes('examples')) {
                 path = '../sqlite-examples';
