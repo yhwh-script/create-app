@@ -1,17 +1,23 @@
 {
   "author": "Jahrome <yhwhscript@gmail.com>",
   "name": "@yhwh-script/create-app",
-  "version": "0.9.9",
+  "version": "1.1.0",
   "description": "A yhwh-script web app can become anything you want it to become. Set it up with just one command.",
   "bin": {
     "create-app": "./bin/create-app.mjs"
   },
   "keywords": [
-    "JavaScript",
-    "WebComponents",
+    "CSS",
     "CustomElements",
+    "HTML",
+    "JavaScript",
+    "OPFS",
     "Single File Components",
-    "SFC"
+    "SFC",
+    "SQLite",
+    "Vanilla",
+    "Vite",
+    "WebComponents"
   ],
   "repository": {
     "type": "git",
