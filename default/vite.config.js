@@ -6,14 +6,7 @@ export default defineConfig({
         target: 'esnext'
     },
     server: {
-        port: 3443,
-        headers: {
-            'Cross-Origin-Opener-Policy': 'same-origin',
-            'Cross-Origin-Embedder-Policy': 'require-corp',
-        },
-    },
-    optimizeDeps: {
-        exclude: ['@sqlite.org/sqlite-wasm'],
+        port: 3443
     },
     plugins: [
         basicSsl()
